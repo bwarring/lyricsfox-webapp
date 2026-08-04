@@ -33913,7 +33913,9 @@ p=4
 k=h
 j=k.e
 j===$&&A.b()
-if(!j)k.f===$&&A.b()
+if(!j){k=k.f
+k===$&&A.b()}else k=!0
+if(!k)h.a===$&&A.b()
 n="https://www.ultimate-guitar.com/search.php?search_type=title&value="+A.yn(2,B.c.ef(a),B.ab,!1)
 e=g
 s=7
