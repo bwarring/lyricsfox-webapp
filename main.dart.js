@@ -33466,7 +33466,7 @@ return A.t($async$bbv,r)},
 a0H(){var s=0,r=A.u(t.nc),q,p,o,n,m,l,k,j
 var $async$a0H=A.o(function(a,b){if(a===1)return A.q(b,r)
 for(;;)switch(s){case 0:s=3
-return A.j(A.baE(!1,A.c(["json"],t.s),!0,B.iM),$async$a0H)
+return A.j(A.baE(!1,A.c(["json"],t.s),!0,B.iM,!0),$async$a0H)
 case 3:j=b
 if(j==null||J.hb(j.a)){A.bf().$1("[LyricsWebFileService] result null or no files -- this means pickFiles() itself returned nothing, before any of our bytes/path fallback logic ever runs.")
 q=null
@@ -36490,7 +36490,7 @@ if(b.$1(q))return q}return null},
 bwC(a){var s,r=A.a2(a),q=new J.cz(a,a.length,r.h("cz<1>"))
 if(q.q()){s=q.d
 return s==null?r.c.a(s):s}return null},
-baE(a,b,c,d){return $.ben().Da(!1,b,!0,0,null,null,c,null,!1,d,!1,!1)},
+baE(a,b,c,d,e){return $.ben().Da(!1,b,!0,0,null,null,c,null,!1,d,e,!1)},
 bhl(a,b,c,d,e){return $.ben().E0(a,b,c,d,null,!1,e)},
 buf(a){return B.jM},
 b7d(a,b,c,d,e){return A.bFS(a,b,c,d,e,e)},
@@ -56389,8 +56389,8 @@ gv(a){return 0},
 j(a){var s=this
 return"PlatformFile(, name: "+s.b+", bytes: "+A.l(s.c)+", readStream: "+A.l(s.d)+", size: "+s.e+")"}}
 A.aCe.prototype={
-Da(a,b,c,d,e,f,g,h,i,j,k,l){return this.zW(j,!1,b,h,!1,!1,d)},
-zW(a,b,c,d,e,f,g){return this.aua(a,!1,c,d,!1,!1,g)},
+Da(a,b,c,d,e,f,g,h,i,j,k,l){return this.zW(j,!1,b,h,k,!1,d)},
+zW(a,b,c,d,e,f,g){return this.aua(a,!1,c,d,e,!1,g)},
 aua(a,b,a0,a1,a2,a3,a4){var s=0,r=A.u(t.fW),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$zW=A.o(function(a5,a6){if(a5===1){o.push(a6)
 s=p}for(;;)switch(s){case 0:d=a.b
@@ -56403,7 +56403,7 @@ h=h==null?null:h.ag()
 s=7
 return A.j(t.uz.b(h)?h:A.d1(h,t.H),$async$zW)
 case 7:s=8
-return A.j(n.a.JI(d,A.a0(["allowMultipleSelection",!1,"allowedExtensions",a0,"withData",!1,"compressionQuality",a4],t.N,t.X),t.f),$async$zW)
+return A.j(n.a.JI(d,A.a0(["allowMultipleSelection",!1,"allowedExtensions",a0,"withData",a2,"compressionQuality",a4],t.N,t.X),t.f),$async$zW)
 case 8:m=a6
 if(m==null){q=null
 s=1
@@ -56435,7 +56435,7 @@ E0(a,b,c,d,e,f,g){var s=t.N
 return this.a.ik("save",A.a0(["fileName",d,"fileType",g.b,"initialDirectory",e,"allowedExtensions",a,"bytes",b],s,t.X),!1,s)}}
 A.ati.prototype={}
 A.atj.prototype={
-Da(a,b,c,d,e,f,g,h,i,j,k,l){return this.aU5(!1,b,!0,d,e,f,g,h,!1,j,!1,!1)},
+Da(a,b,c,d,e,f,g,h,i,j,k,l){return this.aU5(!1,b,!0,d,e,f,g,h,!1,j,k,!1)},
 aU5(a,b,c,d,e,f,a0,a1,a2,a3,a4,a5){var s=0,r=A.u(t.fW),q,p=this,o,n,m,l,k,j,i,h,g
 var $async$Da=A.o(function(a6,a7){if(a6===1)return A.q(a7,r)
 for(;;)switch(s){case 0:g={}
@@ -56452,7 +56452,7 @@ m.multiple=!1
 m.accept=n
 m.style.display="none"
 g.b=!1
-l=new A.atn(g,p,m,a1,!1,!1,!1)
+l=new A.atn(g,p,m,a1,!1,a4,!1)
 k=new A.atl(g)
 A.aca(m,"change",l,!1,t.Ds.c)
 m.addEventListener("change",A.e2(l))
@@ -119887,7 +119887,7 @@ var $async$FD=A.o(function(a0,a1){if(a0===1){o.push(a1)
 s=p}for(;;)switch(s){case 0:c=$.qr()
 p=4
 s=7
-return A.j(A.baE(!1,A.c(["pdf"],t.s),!1,B.iM),$async$FD)
+return A.j(A.baE(!1,A.c(["pdf"],t.s),!1,B.iM,!1),$async$FD)
 case 7:m=a1
 if(n.c==null||m==null||J.hb(m.a)){s=1
 break}i=n.c
@@ -119923,7 +119923,7 @@ var $async$Aq=A.o(function(a,b){if(a===1){p.push(b)
 s=q}for(;;)switch(s){case 0:o.S(new A.aWb(o))
 q=3
 s=6
-return A.j(A.baE(!1,A.c(["json"],t.s),!1,B.iM),$async$Aq)
+return A.j(A.baE(!1,A.c(["json"],t.s),!1,B.iM,!1),$async$Aq)
 case 6:n=b
 s=n!=null&&J.FE(n.a).a!=null?7:9
 break
