@@ -131040,7 +131040,7 @@ r.z.scu(s[0])
 q=s[1]
 r.gps().scu(q)
 r.tX(!0)
-r.a20("You selected: "+a)}r=this.a
+r.a20("YOU SELECTED: "+a)}r=this.a
 r.Q.Xa()
 r.as=A.c([],t.s)
 if(p)r.tX(!0)},
@@ -132654,58 +132654,57 @@ s=1
 break}case 1:return A.q(q,r)}})
 return A.r($async$JH,r)},
 pQ(a,b,c){return this.aQy(a,b,c)},
-aQy(a5,a6,a7){var s=0,r=A.t(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4
-var $async$pQ=A.o(function(a8,a9){if(a8===1){p.push(a9)
-s=q}for(;;)switch(s){case 0:e=$.bfT()
-d=A.qA(null,$.bS().cQ("api_host_apigenius"),$.bS().cQ("api_search_path_genius"),A.a2(["q",a6+"-"+a7,"access_token",e,"per_page","3","page","1"],t.N,t.z),"https")
-c=A.bfQ()
-b=c==null?new A.vb(A.c([],t.c)):c
-a=A.cN(d.gmd(),0,null)
-a0=null
-a1=""
+aQy(a4,a5,a6){var s=0,r=A.t(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3
+var $async$pQ=A.o(function(a7,a8){if(a7===1){p.push(a8)
+s=q}for(;;)switch(s){case 0:f=$.bfT()
+e=A.qA(null,$.bS().cQ("api_host_apigenius"),$.bS().cQ("api_search_path_genius"),A.a2(["q",a5+"-"+a6,"access_token",f,"per_page","3","page","1"],t.N,t.z),"https")
+d=A.bfQ()
+c=d==null?new A.vb(A.c([],t.c)):d
+b=A.cN(e.gmd(),0,null)
+a=null
+a0=""
+a1="not available"
 a2="not available"
-a3="not available"
 q=3
 s=6
-return A.j(b.uy("GET",a,null),$async$pQ)
-case 6:n=a9
+return A.j(c.uy("GET",b,null),$async$pQ)
+case 6:n=a8
 i=n
 m=B.bt.uZ(A.be6(A.bco(i.e)).fY(i.w),null)
 l=J.aF(J.aF(m,"response"),"hits")
 if(J.fc(l)){k=J.aF(J.aF(J.aF(l,0),"result"),"url")
-a1=J.aF(J.aF(J.aF(l,0),"result"),"song_art_image_thumbnail_url")
-a2=J.aF(J.aF(J.aF(l,0),"result"),"artist_names")
-a3=J.aF(J.aF(J.aF(l,0),"result"),"title")
-j=o.aRT(l,a6,a7,a2,a3)
+a0=J.aF(J.aF(J.aF(l,0),"result"),"song_art_image_thumbnail_url")
+a1=J.aF(J.aF(J.aF(l,0),"result"),"artist_names")
+a2=J.aF(J.aF(J.aF(l,0),"result"),"title")
+j=o.aRT(l,a5,a6,a1,a2)
 k=j<999?J.aF(J.aF(J.aF(l,j),"result"),"url"):null
-a0=k}else{i=A.pQ("notfound")
-a5.a=i==null?A.cV(i):i
-a5.b="notfound"
-a5.c=A.iQ()}q=1
+a=k}else{i=A.pQ("notfound")
+a4.a=i==null?A.cV(i):i
+a4.b="notfound"
+a4.c=A.iQ()}q=1
 s=5
 break
 case 3:q=2
-a4=p.pop()
-if(t.R.b(A.U(a4))){i=A.pQ("exception")
-a5.a=i==null?A.cV(i):i
-a5.b="exception"
-a5.c=A.iQ()}else throw a4
+a3=p.pop()
+if(t.R.b(A.U(a3))){i=A.pQ("exception")
+a4.a=i==null?A.cV(i):i
+a4.b="exception"
+a4.c=A.iQ()}else throw a3
 s=5
 break
 case 2:s=1
 break
-case 5:if(a0!=null){i=a2
-g=A.bvI(a3)
-f=a1
-a5.c=new A.bT(f,i,g,"",a0,!1,!1,!1,!1,!1)
-i=A.pQ("success")
+case 5:if(a!=null){i=a1
+g=A.bvI(a2)
+a4.c=new A.bT(a0,i,g,"",a,!1,!1,!1,!1,!1)
+g=A.pQ("success")
+g.toString
+a4.a=g
+a4.b="success"}else{i=A.pQ("notfound")
 i.toString
-a5.a=i
-a5.b="success"}else{i=A.pQ("notfound")
-i.toString
-a5.a=i
-a5.b="notfound"
-a5.c=A.iQ()}return A.q(null,r)
+a4.a=i
+a4.b="notfound"
+a4.c=A.iQ()}return A.q(null,r)
 case 1:return A.p(p.at(-1),r)}})
 return A.r($async$pQ,r)},
 Ju(a,b){return this.aQB(a,b)},
